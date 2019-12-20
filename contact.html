@@ -26,23 +26,24 @@
     <section class="main-section">
       <h1>Contact</h1>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+      <label for="basic-url">Your Name</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="John Smith" aria-label="John Smith" aria-describedby="basic-addon2">
+      </div>
+      
+      <label for="basic-url">Your Email</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+      
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Message</span>
+        </div>
+        <textarea class="form-control" aria-label="Message" height=200px></textarea>
+      </div>
+
+      <button type="button" class="btn btn-info">Submit</button>
 
     </section>
 
