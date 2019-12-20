@@ -51,7 +51,7 @@ body {
   }
   
   /* header */
-  
+  /* Cannot for figure out how to make text dark  */
   #navright {
     position: fixed;
     z-index: 99;
@@ -214,4 +214,16 @@ body {
     cursor: pointer;
     background: #4aaaa5;
     border: 0 none;
+  }
+
+  @media screen and (max-width: 768px) {
+      .navbar {
+          margin-top: -1px;
+          width: 100%;
+      }
+      #logo {
+          height: 70px;
+          margin-bottom: 2px;
+          width: 100%;
+      }
   }
